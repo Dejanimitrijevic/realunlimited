@@ -1,0 +1,69 @@
+{{ 'multi-brands.css' | asset_url | stylesheet_tag }}
+
+<div class="multi-brand">
+    <div class="container page-width color-{{ section.settings.color_scheme }}">
+        {% if section.settings.title %}
+            <span class="title">{{ section.settings.title }}</span>
+        {% endif %}
+        <div class="brands">
+            {% for block in section.blocks %}
+                {% if block.type == 'block' %}
+                    {% if block.settings.image_brand %}
+                        <div class="brand atr-{{ forloop.index }}">
+                            <img
+                                    src="{{ block.settings.image_brand.image | image_url: width: 140 }}"
+                                    alt="{{ block.settings.image_brand.image.alt | escape }}"
+                                    width="100%"
+                                    height="100%"
+                                    loading="lazy"
+                                >
+                        </div>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "mutlti-brand",
+        "class": "section",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "title",
+                "label": "Title"
+            },
+            {
+            "type": "color_scheme",
+            "id": "color_scheme",
+            "label": "t:sections.all.colors.label",
+            "default": "scheme-1"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "block",
+                "name": "brand",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image_brand",
+                        "label": "Brand"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "multi brand",
+                "blocks": [
+                    {
+                        "type": "block"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}

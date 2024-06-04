@@ -3,73 +3,130 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
+        "button1_tR3mJx": {
+          "type": "button1",
+          "settings": {
+            "button_label": "Trusted Investment Platform",
+            "button_link": "shopify:\/\/collections"
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
+            "heading": "Empower Your Finances with Strategic Investments",
             "heading_size": "h0"
+          }
+        },
+        "text_bKQEhA": {
+          "type": "text",
+          "settings": {
+            "text": "Maximize your business and investment profits with expert guidance and innovative solutions.",
+            "text_style": "subtitle"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "Getting Started",
             "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
+        },
+        "reviewtext_FDLtDL": {
+          "type": "reviewtext",
+          "settings": {
+            "hero_review": "shopify:\/\/shop_images\/Frame_14.png",
+            "review_text": "From 3,123+ Users (4.8 of 5)"
+          }
+        },
+        "imagewrapper_Bxx3be": {
+          "type": "Imagewrapper",
+          "settings": {
+            "image_wrapper": "shopify:\/\/shop_images\/Desktop_-_1.png"
+          }
         }
       },
       "block_order": [
+        "button1_tR3mJx",
         "heading",
-        "button"
+        "text_bKQEhA",
+        "button",
+        "reviewtext_FDLtDL",
+        "imagewrapper_Bxx3be"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/663aae032ffe3069e5a8c3fe_Hero.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-2adc28f6-8a23-45e6-ad96-1976d306e4cc",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "mutil_brands_gzJz34": {
+      "type": "mutil-brands",
+      "blocks": {
+        "block_hh4UBC": {
+          "type": "block",
+          "settings": {
+            "image_brand": "shopify:\/\/shop_images\/Logo.png"
+          }
+        },
+        "block_YjpFz3": {
+          "type": "block",
+          "settings": {
+            "image_brand": "shopify:\/\/shop_images\/Group_8072.png"
+          }
+        },
+        "block_BGJj4X": {
+          "type": "block",
+          "settings": {
+            "image_brand": "shopify:\/\/shop_images\/Logo_1.png"
+          }
+        },
+        "block_BztPWe": {
+          "type": "block",
+          "settings": {
+            "image_brand": "shopify:\/\/shop_images\/Group_8068.png"
+          }
+        },
+        "block_YANPyx": {
+          "type": "block",
+          "settings": {
+            "image_brand": "shopify:\/\/shop_images\/Logo_2.png"
+          }
+        },
+        "block_7XMztf": {
+          "type": "block",
+          "settings": {
+            "image_brand": "shopify:\/\/shop_images\/Logo_3.png"
+          }
+        }
+      },
+      "block_order": [
+        "block_hh4UBC",
+        "block_YjpFz3",
+        "block_BGJj4X",
+        "block_BztPWe",
+        "block_YANPyx",
+        "block_7XMztf"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
+        "title": "<p>More than <strong>+88,500<\/strong> successful InvestNow users worldwide<\/p>",
+        "color_scheme": "scheme-5f8f1cb0-afb0-483e-af95-65dafb4e6bd9"
       }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "mutil_brands_gzJz34"
   ]
 }
