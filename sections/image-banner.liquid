@@ -1,4 +1,5 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+{{ 'custom-image-banner.css' | asset_url | stylesheet_tag }}
 
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
   {%- style -%}
@@ -115,7 +116,7 @@
       }}
     </div>
   {%- endif -%}
-  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -130,39 +131,87 @@
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
               <p>{{ block.settings.text }}</p>
             </div>
-          {%- when 'buttons' -%}
-            <div
-              class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
-              {{ block.shopify_attributes }}
-            >
-              {%- if block.settings.button_label_1 != blank -%}
+            <div class="btn-with-review">
+              {%- when 'buttons' -%}            
+                <div
+                  class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
+                  {{ block.shopify_attributes }}
+                >
+                  {%- if block.settings.button_label_1 != blank -%}
+                    <a
+                      {% if block.settings.button_link_1 == blank %}
+                        role="link" aria-disabled="true"
+                      {% else %}
+                        href="{{ block.settings.button_link_1 }}"
+                      {% endif %}
+                      class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                    >
+                      {{- block.settings.button_label_1 | escape -}}
+                    </a>
+                  {%- endif -%}
+                  {%- if block.settings.button_label_2 != blank -%}
+                    <a
+                      {% if block.settings.button_link_2 == blank %}
+                        role="link" aria-disabled="true"
+                      {% else %}
+                        href="{{ block.settings.button_link_2 }}"
+                      {% endif %}
+                      class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                    >
+                      {{- block.settings.button_label_2 | escape -}}
+                    </a>
+                  {%- endif -%}
+                </div>
+              {% when 'reviewtext' %}
+                <div class="review-with-text">
+                  {% if block.settings.hero_review %}
+                    <img
+                      src="{{ block.settings.hero_review.image | image_url: width: 140 }}"
+                      alt="{{ block.settings.hero_review.image.alt | escape }}"
+                      width="70"
+                      height="{{ 70 | divided_by: block.settings.hero_review.image.aspect_ratio | ceil }}"
+                      loading="lazy"
+                    >
+                  {% endif %}
+                  {% if block.settings.review_text %}
+                    <span class="review-text">{{ block.settings.review_text }}</span>
+                  {% endif %}
+                </div>
+              </div>
+          
+          {% when 'button1' %}
+            {% if block.settings.button_label %}
+              <div class="long-button">
+                {%  render 'ellipse-icon' %}
                 <a
-                  {% if block.settings.button_link_1 == blank %}
+                  {% if block.settings.url == blank %}
                     role="link" aria-disabled="true"
                   {% else %}
-                    href="{{ block.settings.button_link_1 }}"
+                    href="{{ block.settings.button_link }}"
                   {% endif %}
-                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="long-btn"
                 >
-                  {{- block.settings.button_label_1 | escape -}}
+                  {{- block.settings.button_label | escape -}}
                 </a>
-              {%- endif -%}
-              {%- if block.settings.button_label_2 != blank -%}
-                <a
-                  {% if block.settings.button_link_2 == blank %}
-                    role="link" aria-disabled="true"
-                  {% else %}
-                    href="{{ block.settings.button_link_2 }}"
-                  {% endif %}
-                  class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
-                >
-                  {{- block.settings.button_label_2 | escape -}}
-                </a>
-              {%- endif -%}
-            </div>
+                {% render 'arrow-right-icon' %}
+              </div>
+            {% endif %}
         {%- endcase -%}
       {%- endfor -%}
     </div>
+    {% for block in section.blocks %}
+      {% if block.type == 'Imagewrapper' %}
+        {% if block.settings.image_wrapper %}
+          <img
+              src="{{ block.settings.image_wrapper.image | image_url: width: 1440 }}"
+              alt="{{ block.settings.image_wrapper.image.alt | escape }}"
+              width="100%"
+              height="100%"
+              loading="lazy"
+            >
+        {% endif %}
+      {% endif %}
+    {% endfor %}
   </div>
 </div>
 
@@ -470,6 +519,49 @@
           "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
         }
       ]
+    },
+    {
+      "type": "reviewtext",
+      "name": "review with text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "hero_review",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "review_text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "button1",
+      "name": "Long Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
+    },
+    {
+      "type": "Imagewrapper",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_wrapper",
+          "label": "Image"
+        }
+      ]
     }
   ],
   "presets": [
@@ -484,6 +576,12 @@
         },
         {
           "type": "buttons"
+        },
+        {
+          "type": "reviewtext"
+        },
+        {
+          "type": "button1"
         }
       ]
     }

@@ -116,6 +116,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   padding-left: 3rem;
   padding-right: 3rem;
 }
+@font-face {
+  font-family: Instrument;
+  src: url(https://cdn.shopify.com/s/files/1/0601/2203/8350/files/InstrumentSans-VariableFont_wdth_wght.ttf?v=1717458826);
+}
 
 @media screen and (min-width: 750px) {
   .page-width {

@@ -352,7 +352,7 @@
 @media screen and (min-width: 750px) {
   .banner--desktop-transparent .banner__box {
     background: transparent;
-    max-width: 89rem;
+    max-width: 91rem;
     border: none;
     border-radius: 0;
     box-shadow: none;
@@ -379,7 +379,6 @@
   content: '';
   position: absolute;
   top: 0;
-  background: #000000;
   opacity: 0;
   z-index: 1;
   width: 100%;
