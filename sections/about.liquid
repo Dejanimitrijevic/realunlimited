@@ -1,0 +1,165 @@
+{{ 'custom-about.css' | asset_url | stylesheet_tag }}
+
+<div class="about">
+    <div class="container page-width">
+        <div class="left-section">
+            {% if section.settings.img %}
+                <img
+                    srcset="
+                    {% if section.settings.img.width >= 350 %}{{ section.settings.img | image_url: width: 350 }} 350w,{% endif %}
+                    {% if section.settings.img.width >= 750 %}{{ section.settings.img | image_url: width: 750 }} 750w,{% endif %}
+                    {% if section.settings.img.width >= 1100 %}{{ section.settings.img | image_url: width: 1100 }} 1100w,{% endif %}
+                    {% if section.settings.img.width >= 1500 %}{{ section.settings.img | image_url: width: 1500 }} 1500w,{% endif %}
+                    {% if section.settings.img.width >= 2200 %}{{ section.settings.img | image_url: width: 2200 }} 2200w,{% endif %}
+                    {% if section.settings.img.width >= 3000 %}{{ section.settings.img | image_url: width: 3000 }} 3000w,{% endif %}
+                    {{ section.settings.img | image_url }} {{ section.settings.img.width }}w
+                    "
+                    src="{{ section.settings.img | image_url: width: 1100 }}"
+                    loading="lazy"
+                    fetchpriority="high"
+                    width="100%"
+                    height="100%"
+                    alt="{{ section.settings.img.alt | escape }}"
+                >
+            {% endif %}
+        </div>
+        <div class="right-section">
+            <div class="right-top">
+                {% if section.settings.title %}
+                    <h2>{{ section.settings.title }}</h2>
+                {% endif %}
+                {% if section.settings.text %}
+                    <h3>{{ section.settings.text }}</h3>
+                {% endif %}
+                <div class="content">
+                    {% for block in section.blocks%}
+                        {% if block.type == "block" %}
+                        {% comment %} {%  render 'iconamoon-uncheck' %} {% endcomment %}
+                            <div class="icon-with-text" data-index="{{ forloop.index0 }}">
+                                
+                                    <div>
+                                        {% render 'iconamoon-uncheck' %}
+                                    </div>
+                                
+
+                                <span class="content-item">{{ block.settings.text }}</span>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="symbol">
+                {% for block in section.blocks %}
+                    {% if block.type == "symbol" %}
+                        <div class="symbol-item">
+                            <img
+                                srcset="
+                                {% if block.settings.img.width >= 350 %}{{ block.settings.img | image_url: width: 350 }} 350w,{% endif %}
+                                {% if block.settings.img.width >= 750 %}{{ block.settings.img | image_url: width: 750 }} 750w,{% endif %}
+                                {% if block.settings.img.width >= 1100 %}{{ block.settings.img | image_url: width: 1100 }} 1100w,{% endif %}
+                                {% if block.settings.img.width >= 1500 %}{{ block.settings.img | image_url: width: 1500 }} 1500w,{% endif %}
+                                {% if block.settings.img.width >= 2200 %}{{ block.settings.img | image_url: width: 2200 }} 2200w,{% endif %}
+                                {% if block.settings.img.width >= 3000 %}{{ block.settings.img | image_url: width: 3000 }} 3000w,{% endif %}
+                                {{ block.settings.img | image_url }} {{ block.settings.img.width }}w
+                                "
+                                src="{{ block.settings.img | image_url: width: 1100 }}"
+                                loading="lazy"
+                                fetchpriority="high"
+                                width="100%"
+                                height="100%"
+                                alt="{{ block.settings.img.alt | escape }}"
+                            >
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    let active = false;
+    document.querySelectorAll('.icon-with-text').forEach((e) => {
+        var iconsObj = {
+            0: { isSelected: false },
+            1: { isSelected: false },
+            2: { isSelected: false },
+            3: { isSelected: false }
+            };
+        e.addEventListener("click", () => {
+            const number = e.getAttribute('data-index');
+            const icon = iconsObj[number].isSelected;
+            console.log("icon==>", icon);
+            if(icon) {
+                e.classList.remove('check');
+            } else {
+                e.classList.add('check');
+            }
+            iconsObj[number].isSelected = !icon;       
+        });
+    });
+
+</script>
+{% schema %}
+    {
+        "name": "about",
+        "class": "section",
+        "settings": [
+           {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Image"
+           },
+           {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title"
+           },
+           {
+            "type": "text",
+            "id": "text",
+            "label": "Text",
+            "default": "Lorem ipsum dolor sit amet  conset atetur adipiscing elit, sed do eiusmod tempor incididunt."
+           }
+        ],
+        "blocks": [
+            {
+                "type": "block",
+                "name": "item text",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "Text"
+                    }
+                ]
+            },
+            {
+                "type": "symbol",
+                "name": "symbol",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "img",
+                        "label": "Image"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "About",
+                "blocks": [
+                    {
+                        "type": "block"
+                    },
+                    {
+                        "type": "symbol"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}

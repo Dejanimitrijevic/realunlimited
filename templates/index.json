@@ -351,12 +351,67 @@
         "button_link": "",
         "content": "Our investment platform automatically detects and secures any data that is sensitive to you"
       }
+    },
+    "about_RQzcRB": {
+      "type": "about",
+      "blocks": {
+        "block_mGDPgP": {
+          "type": "block",
+          "settings": {
+            "text": "Smart, extensive and scalable investment system"
+          }
+        },
+        "block_NQqJfd": {
+          "type": "block",
+          "settings": {
+            "text": "A highly intelligent robot has been prepared"
+          }
+        },
+        "block_ByrMEU": {
+          "type": "block",
+          "settings": {
+            "text": "Hundreds of practical and useful investment examples"
+          }
+        },
+        "block_7cV8qU": {
+          "type": "block",
+          "settings": {
+            "text": "Dashboards settings pages and more"
+          }
+        },
+        "symbol_detKgN": {
+          "type": "symbol",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Group_39747.png"
+          }
+        },
+        "symbol_iRPnVW": {
+          "type": "symbol",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Group_39746.png"
+          }
+        }
+      },
+      "block_order": [
+        "block_mGDPgP",
+        "block_NQqJfd",
+        "block_ByrMEU",
+        "block_7cV8qU",
+        "symbol_detKgN",
+        "symbol_iRPnVW"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Frame_37533_1.png",
+        "title": "<p>The <strong>security teams<\/strong> at our investment company guarantees that all your data is safe<\/p>",
+        "text": "Lorem ipsum dolor sit amet  conset atetur adipiscing elit, sed do eiusmod tempor incididunt."
+      }
     }
   },
   "order": [
     "image_banner",
     "mutil_brands_gzJz34",
     "multi_platform_qaJjtc",
-    "stock_slider_7aKRyg"
+    "stock_slider_7aKRyg",
+    "about_RQzcRB"
   ]
 }

@@ -1,0 +1,84 @@
+.about .container {
+    display: flex;
+    justify-content: space-between;
+}
+.about .container .left-section {
+    width: 50%;
+}
+.about .container .right-section {
+    width: 42%;
+    padding: 39px 0 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about .container .right-section h2 {
+    width: 100%;
+    font-family: Instrument;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin: 0;
+    color: var(--Primary, #071E12);
+
+}
+.about .container .right-section h2 p {
+    margin: 0;
+}
+.about .container .right-section h2 p strong {
+    font-family: Instrument;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color: var(--Green, #48B065);
+    border: 1px solid var(--Green, #48B065);
+    padding: 0 14px 5px 14px;
+    border-radius: 100px;
+}
+.about .container .right-section h3 {
+    width: 85%;
+    font-family: Instrument;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: var(--Text-Color, #071E1280);
+    margin: 12px 0 40px;
+}
+.about .container .right-section span {
+    font-family: Instrument;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    color: var(--Primary, #071E12);
+}
+.about .container .right-section .content {
+    width: 590px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 25px;
+    grid-column-gap: 42px;
+}
+.about .container .right-section .symbol {
+    display: flex;
+    gap: 60px;
+    width: 83%;
+    height: 80px;
+}
+.about .container .right-section .icon-with-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+.check path {
+    stroke: white !important;
+}
+.check rect {
+    fill: #48B065 !important;
+}
+
