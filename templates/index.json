@@ -123,10 +123,240 @@
         "title": "<p>More than <strong>+88,500<\/strong> successful InvestNow users worldwide<\/p>",
         "color_scheme": "scheme-5f8f1cb0-afb0-483e-af95-65dafb4e6bd9"
       }
+    },
+    "multi_platform_qaJjtc": {
+      "type": "multi-platform",
+      "blocks": {
+        "block_FCypX7": {
+          "type": "block",
+          "settings": {
+            "btn_labbel": "Wealth Accumulation",
+            "color_scheme": "scheme-2a857076-955e-47ab-822a-ba904224d8cd",
+            "icon": "shopify:\/\/shop_images\/solar_chart-outline.png",
+            "subtitle": "Investments can grow your wealth over time",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.",
+            "content_text1": "Hundreds of practical and useful investment examples",
+            "content_text2": "A highly intelligent robot has been prepared",
+            "content_text3": "Smart, extensive and scalable investment system",
+            "detail_btn_label": "Check Risks Automatically",
+            "detail_btn_link": "",
+            "main_image": "shopify:\/\/shop_images\/Frame_37533.png",
+            "button_style_secondary_1": false
+          }
+        },
+        "block_eiEFqC": {
+          "type": "block",
+          "settings": {
+            "btn_labbel": "Passive Income",
+            "color_scheme": "scheme-2a857076-955e-47ab-822a-ba904224d8cd",
+            "icon": "shopify:\/\/shop_images\/solar_chart-outline.png",
+            "subtitle": "Investments can grow your wealth over time",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.",
+            "content_text1": "Hundreds of practical and useful investment examples",
+            "content_text2": "A highly intelligent robot has been prepared",
+            "content_text3": "Smart, extensive and scalable investment system",
+            "detail_btn_label": "Check Risks Automatically",
+            "detail_btn_link": "",
+            "main_image": "shopify:\/\/shop_images\/product-example-2-1.webp",
+            "button_style_secondary_1": false
+          }
+        },
+        "block_4emMVF": {
+          "type": "block",
+          "settings": {
+            "btn_labbel": "For Inflation Hedge",
+            "color_scheme": "scheme-1",
+            "icon": "shopify:\/\/shop_images\/solar_chart-outline.png",
+            "subtitle": "Investments can grow your wealth over time",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.",
+            "content_text1": "Hundreds of practical and useful investment examples",
+            "content_text2": "A highly intelligent robot has been prepared",
+            "content_text3": "Smart, extensive and scalable investment system",
+            "detail_btn_label": "Check Risks Automatically",
+            "detail_btn_link": "",
+            "main_image": "shopify:\/\/shop_images\/sample-normal-wax.png",
+            "button_style_secondary_1": false
+          }
+        },
+        "block_mGKyYT": {
+          "type": "block",
+          "settings": {
+            "btn_labbel": "Liquidity",
+            "color_scheme": "scheme-1",
+            "icon": "shopify:\/\/shop_images\/solar_chart-outline.png",
+            "subtitle": "Investments can grow your wealth over time",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.",
+            "content_text1": "Hundreds of practical and useful investment examples",
+            "content_text2": "A highly intelligent robot has been prepared",
+            "content_text3": "Smart, extensive and scalable investment system",
+            "detail_btn_label": "Check Risks Automatically",
+            "detail_btn_link": "",
+            "main_image": "shopify:\/\/shop_images\/Frame_37533.png",
+            "button_style_secondary_1": false
+          }
+        },
+        "block_3hiCMF": {
+          "type": "block",
+          "settings": {
+            "btn_labbel": "Financial Security",
+            "color_scheme": "scheme-1",
+            "icon": "shopify:\/\/shop_images\/solar_chart-outline.png",
+            "subtitle": "Investments can grow your wealth over time",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.",
+            "content_text1": "Hundreds of practical and useful investment examples",
+            "content_text2": "A highly intelligent robot has been prepared",
+            "content_text3": "Smart, extensive and scalable investment system",
+            "detail_btn_label": "Check Risks Automatically",
+            "detail_btn_link": "",
+            "main_image": "shopify:\/\/shop_images\/Frame_37533.png",
+            "button_style_secondary_1": false
+          }
+        },
+        "block_7cAPNJ": {
+          "type": "block",
+          "settings": {
+            "btn_labbel": "Retirement Planning",
+            "color_scheme": "scheme-1",
+            "icon": "shopify:\/\/shop_images\/solar_chart-outline.png",
+            "subtitle": "Investments can grow your wealth over time",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.",
+            "content_text1": "Hundreds of practical and useful investment examples",
+            "content_text2": "A highly intelligent robot has been prepared",
+            "content_text3": "Smart, extensive and scalable investment system",
+            "detail_btn_label": "Check Risks Automatically",
+            "detail_btn_link": "",
+            "main_image": "shopify:\/\/shop_images\/Frame_37533.png",
+            "button_style_secondary_1": false
+          }
+        },
+        "block_DUCYLW": {
+          "type": "block",
+          "settings": {
+            "btn_labbel": "Benefits",
+            "color_scheme": "scheme-1",
+            "icon": "shopify:\/\/shop_images\/solar_chart-outline.png",
+            "subtitle": "Investments can grow your wealth over time",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.",
+            "content_text1": "Hundreds of practical and useful investment examples",
+            "content_text2": "A highly intelligent robot has been prepared",
+            "content_text3": "Smart, extensive and scalable investment system",
+            "detail_btn_label": "Check Risks Automatically",
+            "detail_btn_link": "",
+            "main_image": "shopify:\/\/shop_images\/Frame_37533.png",
+            "button_style_secondary_1": false
+          }
+        }
+      },
+      "block_order": [
+        "block_FCypX7",
+        "block_eiEFqC",
+        "block_4emMVF",
+        "block_mGKyYT",
+        "block_3hiCMF",
+        "block_7cAPNJ",
+        "block_DUCYLW"
+      ],
+      "settings": {
+        "title": "The complete platform to power your investments"
+      }
+    },
+    "stock_slider_7aKRyg": {
+      "type": "stock-slider",
+      "blocks": {
+        "block_DFXxy4": {
+          "type": "block",
+          "settings": {
+            "mark": "shopify:\/\/shop_images\/Asset_9.png"
+          }
+        },
+        "block_ncaD96": {
+          "type": "block",
+          "settings": {
+            "mark": "shopify:\/\/shop_images\/Asset_10.png"
+          }
+        },
+        "block_Lk9DdL": {
+          "type": "block",
+          "settings": {
+            "mark": "shopify:\/\/shop_images\/Asset_7.png"
+          }
+        },
+        "block_ch7r4G": {
+          "type": "block",
+          "settings": {
+            "mark": "shopify:\/\/shop_images\/Asset_4.png"
+          }
+        },
+        "block_zGWgTi": {
+          "type": "block",
+          "settings": {
+            "mark": "shopify:\/\/shop_images\/Asset_9.png"
+          }
+        },
+        "block_pzH3jx": {
+          "type": "block",
+          "settings": {
+            "mark": "shopify:\/\/shop_images\/Asset_8.png"
+          }
+        },
+        "block_kLHBdW": {
+          "type": "block",
+          "settings": {
+            "mark": "shopify:\/\/shop_images\/Asset_5.png"
+          }
+        },
+        "block_X98FwH": {
+          "type": "block",
+          "settings": {
+            "mark": "shopify:\/\/shop_images\/Asset_2.png"
+          }
+        },
+        "block_UEVpqA": {
+          "type": "block",
+          "settings": {
+            "mark": "shopify:\/\/shop_images\/Asset_4.png"
+          }
+        },
+        "block_4h8zPF": {
+          "type": "block",
+          "settings": {
+            "mark": "shopify:\/\/shop_images\/Asset_3.png"
+          }
+        },
+        "block_mEneDf": {
+          "type": "block",
+          "settings": {
+            "mark": "shopify:\/\/shop_images\/Asset_9.png"
+          }
+        }
+      },
+      "block_order": [
+        "block_DFXxy4",
+        "block_ncaD96",
+        "block_Lk9DdL",
+        "block_ch7r4G",
+        "block_zGWgTi",
+        "block_pzH3jx",
+        "block_kLHBdW",
+        "block_X98FwH",
+        "block_UEVpqA",
+        "block_4h8zPF",
+        "block_mEneDf"
+      ],
+      "settings": {
+        "title": "We provide many types of stock for you to invest",
+        "color_scheme": "scheme-2a857076-955e-47ab-822a-ba904224d8cd",
+        "middle_image": "shopify:\/\/shop_images\/Untitled.png",
+        "button_label": "Download Our App",
+        "button_link": "",
+        "content": "Our investment platform automatically detects and secures any data that is sensitive to you"
+      }
     }
   },
   "order": [
     "image_banner",
-    "mutil_brands_gzJz34"
+    "mutil_brands_gzJz34",
+    "multi_platform_qaJjtc",
+    "stock_slider_7aKRyg"
   ]
 }

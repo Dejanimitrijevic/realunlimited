@@ -1,0 +1,148 @@
+{{ 'custom-stock.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'swiper.css' | asset_url | stylesheet_tag }} {% endcomment %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+
+<div class="stock">
+    <div class="container color-{{ section.settings.color_scheme }}">
+        {% if section.settings.title %}
+            <div class="title">
+                <h1>{{ section.settings.title }}</h1>
+            </div>
+        {% endif %}
+            <div class="main ">
+                <div class="middle_img">
+                    <img 
+                        src="{{ section.settings.middle_image | image_url: width: 700 }}"
+                        alt="{{ section.settings.middle_image.alt | escape }}"
+                        width="auto"
+                        height="auto"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="flow">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            {% for block in section.blocks %}
+                                {% if block.type == "block" %}
+                                    {% if block.settings.mark %}
+                                        <div class="mark_decoration swiper-slide">
+                                            <img
+                                                src="{{ block.settings.mark | image_url: width: 70 }}"
+                                                alt="{{ block.settings.mark.alt | escape }}"
+                                                width="auto"
+                                                height="auto"
+                                                loading="lazy"
+                                            >
+                                        </div>
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {%- if section.settings.button_label != blank -%}
+            <div class="download_btn">
+                <a
+                    {% if section.settings.button_link == blank %}
+                    role="link" aria-disabled="true"
+                    {% else %}
+                    href="{{ section.settings.button_link }}"
+                    {% endif %}
+                    class="button{% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                >
+                    {{- section.settings.button_label | escape -}}
+                </a>
+            </div>
+        {%- endif -%}
+        {% if section.settings.content %}
+            <div class="content">
+                <span>{{ section.settings.content }}</span>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+<script>
+   var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 11,
+  centeredSlides: true,
+  spaceBetween: 30,
+  grabCursor: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  loop: true,
+});
+</script>
+
+
+{% schema %}
+    {
+        "name": "stock",
+        "class": "section",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "We provide many types of stock for you to invest"
+            },
+            {
+                "type": "color_scheme",
+                "id": "color_scheme",
+                "label": "t:sections.all.colors.label",
+                "default": "scheme-1"
+            },
+            {
+                "type": "image_picker",
+                "id": "middle_image",
+                "label": "Image"
+            },
+            {
+                "type": "text",
+                "id": "button_label",
+                "label": "Button Label",
+                "default": "Download"
+            },
+            {
+                "type": "url",
+                "id": "button_link",
+                "label": "Button Link"
+            },
+            {
+                "type": "text",
+                "id": "content",
+                "label": "Text",
+                "default": "Our investment platform automatically detects and secures any data that is sensitive to you"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "block",
+                "name": "item mark",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "mark",
+                        "label": "Mark"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "stock",
+                "blocks": [
+                    {
+                        "type": "block"
+                    }
+                ]
+                
+            }
+        ]
+    }
+{% endschema %}

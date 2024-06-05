@@ -1,0 +1,201 @@
+{{ 'custom-multi-platform.css' | asset_url | stylesheet_tag }}
+
+<div class="platform">
+    <div class="container page-width  ">
+        {% if section.settings.title %}
+            <h1>{{ section.settings.title }}</h1>
+        {% endif %}
+        <div class="multi-btn">
+            {% for block in section.blocks %}
+                {% if block.type == "block" %}
+                    <div class="btn_item btn" data-index="{{ forloop.index0 }}">
+                     <div class="submite {% if forloop.index0 ==0 %}btn_active{% endif %}">
+                            {{ block.settings.btn_labbel }}                     
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        {% for block in section.blocks %}
+            <div class="main_item {% if forloop.index0 == 0 %}active{% endif %} color-{{ block.settings.color_scheme }}">
+                <div class="main_item--atr">
+                    {% if block.type == "block" %}
+                        <div class="left_bar">
+                            <div class="left-top">
+                                <img
+                                    src="{{ block.settings.icon.image | image_url: width: 140 }}"
+                                    alt="{{ block.settings.icon.image.alt | escape }}"
+                                    width="70"
+                                    height="{{ 70 | divided_by: block.settings.icon.image.aspect_ratio | ceil }}"
+                                    loading="lazy"
+                                >
+                                <h3>{{ block.settings.subtitle }}</h3>
+                                <span>{{ block.settings.text }}</span>
+                            </div>
+                            <div class="left-bottom">
+                                <div class="item_content">
+                                    {%  render 'vector_icon' %}
+                                    {{ block.settings.content_text1 }}
+                                </div>
+                                <div class="item_content">
+                                    {%  render 'vector_icon' %}
+                                    {{ block.settings.content_text2 }}
+                                </div>
+                                <div class="item_content">
+                                    {%  render 'vector_icon' %}
+                                    {{ block.settings.content_text3 }}
+                                </div>
+                                <div class="btn_check">
+                                    <a
+                                    {% if block.settings.detail_btn_link == blank %}
+                                        role="link" aria-disabled="true"
+                                    {% else %}
+                                        href="{{ block.settingsdetail_btn_link }}"
+                                    {% endif %}
+                                    class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                                    >
+                                    {{- block.settings.detail_btn_label | escape -}}
+                                    </a>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="right_bar">
+                            <img
+                                src="{{ block.settings.main_image.image | image_url: width: 1440 }}"
+                                alt="{{ block.settings.main_image.image.alt | escape }}"
+                                width="100%"
+                                height="100%"
+                                loading="lazy"
+                            >
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll(".btn").forEach((button, buttonIndex) => {
+        button.addEventListener('click', (e) => {         
+            document.querySelectorAll(".main_item").forEach((item, itemIndex) => {
+                if (button.getAttribute("data-index") == itemIndex) {
+                    item.classList.add("active");
+                } else {
+                    item.classList.remove("active");
+                }
+            });
+            document.querySelectorAll(".submite").forEach((s, sIndex) => {
+                console.log("sdfsfs", sIndex);
+                if (button.getAttribute("data-index") == sIndex) {
+                    s.classList.add("btn_active");
+                } else {
+                    s.classList.remove("btn_active");
+                }
+            });
+        });
+    });
+</script>
+
+
+
+{% schema %}
+    {
+        "name": "multi",
+        "class": "section",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "The complete platform to power your investments"
+            }
+        ],
+        "blocks": [
+           {
+            "type": "block",
+            "name": "platform",
+            "settings": [
+                {
+                  "type": "text",
+                  "id": "btn_labbel",
+                  "label": "Button Label"
+                },
+                {
+                "type": "color_scheme",
+                "id": "color_scheme",
+                "label": "t:sections.all.colors.label",
+                "default": "scheme-1"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "icon",
+                    "label": "Icon"
+                },
+                {
+                    "type": "text",
+                    "id": "subtitle",
+                    "label": "Sbtitle",
+                    "default": "Investments can grow your wealth over time"
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "content",
+                    "default": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit."
+                },
+                {
+                    "type": "text",
+                    "id": "content_text1",
+                    "label": "Content Text",
+                    "default": "Hundreds of practical and useful investment examples"
+                },
+                {
+                    "type": "text",
+                    "id": "content_text2",
+                    "label": "Content Text2",
+                    "default": "A highly intelligent robot has been prepared"
+                },
+                {
+                    "type": "text",
+                    "id": "content_text3",
+                    "label": "Content Text3",
+                    "default": "Smart, extensive and scalable investment system"
+                },
+                {
+                    "type": "text",
+                    "id": "detail_btn_label",
+                    "label": "Detail Button Label",
+                    "default": "Check Risks Automatically"
+                },
+                {
+                    "type": "url",
+                    "id": "detail_btn_link",
+                    "label": "Detail Button Link"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "main_image",
+                    "label": "Main Image"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "button_style_secondary_1",
+                    "default": false,
+                    "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
+                    }
+            ]
+           }
+        ],
+        "presets": [
+            {
+                "name": "vector",
+                "blocks": [
+                    {
+                        "type": "block"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}

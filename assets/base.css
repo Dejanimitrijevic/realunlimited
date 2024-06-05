@@ -123,7 +123,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5rem;
+    padding: 0 11.4rem;
   }
 
   .header.page-width,
@@ -1358,7 +1358,6 @@ button.shopify-payment-button__button--unbranded {
 .customer button.disabled,
 .quantity__button.disabled {
   cursor: not-allowed;
-  opacity: 0.5;
 }
 
 .button--full-width {
