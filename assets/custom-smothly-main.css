@@ -1,0 +1,79 @@
+
+.smooth-review .slider {
+    margin-bottom: 30px;
+}
+.smooth-review .slide {
+    width: 460px;
+    height: 267px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.smooth-review .slide .item_container {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; 
+}
+.smooth-review .slide .item_container .review {
+    height: 19px;
+}
+.smooth-review .slide .item_container .main-text {
+    font-size: 18px;
+    line-height: 27px;
+    font-family: Instrument;
+    text-align: left;
+    color: #071E1299;
+}
+.smooth-review .slide .item_container .photo-with-text {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.smooth-review .slide .item_container .photo-with-text .photo {
+    border-radius: 50%;
+}
+.smooth-review .slide .item_container .photo-with-text .photo img {
+    border-radius: 50%;
+}
+.smooth-review .slide .item_container .photo-with-text .content {
+    display: flex;
+    flex-direction: column;
+}
+.item_container .photo-with-text .content h3 { 
+    font-family: Instrument;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    color: #202226;
+    margin: 0;
+}
+.item_container .photo-with-text .content span {
+    font-family: Instrument;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #838383;
+}
+.smooth-review .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.smooth-review .title h1 {
+    margin-bottom: 50px;
+    margin-top: 0;
+    width: 50%;
+    font-family: 'Instrument';
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 55.2px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    background-image: radial-gradient(circle, #071E12, #6E7A6D);
+    -webkit-background-clip: text;
+    background-clip: text;
+}

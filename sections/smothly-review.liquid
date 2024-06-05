@@ -1,0 +1,461 @@
+{{ 'custom-smothly.css' | asset_url | stylesheet_tag }}
+{{ 'custom-smothly-main.css' | asset_url | stylesheet_tag }}
+
+{% for block in section.blocks %}
+    {% if block.type == "block" %}
+    {%  style  %} 
+        .slider .slide-track-{{ block.id }} {
+        animation: scroll {{ block.settings.during }}s linear infinite;
+        display: flex;
+        width: calc(460px * 8);
+    }
+    {% endstyle %}        
+    {% endif %}
+{% endfor %}
+
+
+<div class="smooth-review color-{{ section.settings.color_scheme }}">   
+        <div class="title">
+            <h1>{{ section.settings.title }}</h1>
+        </div>
+    {% for block in section.blocks %}
+        {% if block.type == "block" %}             
+            <div class="slider">
+                <div class="slide-track-{{ block.id }}">        
+                    <div class="slide">
+                        <div class="item_container">
+                            <div class="review">
+                                <img
+                                    src="{{ block.settings.review_1 | image_url: width: 300 }}"
+                                    class="cart-item__image"
+                                    alt="{{ block.settings.review_1.alt | escape }}"
+                                    loading="lazy"
+                                    width="auto"
+                                    height="auto"
+                                >
+                            </div>
+                            <span class="main-text">{{ block.settings.text_1 }}</span>
+                            <div class="photo-with-text">
+                                <div class="photo">
+                                    <img
+                                        src="{{ block.settings.photo_1 | image_url: width: 300 }}"
+                                        class="cart-item__image"
+                                        alt="{{ block.settings.photo_1.alt | escape }}"
+                                        loading="lazy"
+                                        width="auto"
+                                        height="auto"
+                                    >
+                                </div>
+                                <div class="content">
+                                    <h3>{{ block.settings.subtitle_1 }}</h3>
+                                    <span>{{ block.settings.role_1 }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                    <div class="slide">
+                        <div class="item_container">
+                            <div class="review">
+                                <img
+                                    src="{{ block.settings.review_1 | image_url: width: 300 }}"
+                                    class="cart-item__image"
+                                    alt="{{ block.settings.review_1.alt | escape }}"
+                                    loading="lazy"
+                                    width="auto"
+                                    height="auto"
+                                >
+                            </div>
+                            <span class="main-text">{{ block.settings.text_1 }}</span>
+                            <div class="photo-with-text">
+                                <div class="photo">
+                                    <img
+                                        src="{{ block.settings.photo_1 | image_url: width: 300 }}"
+                                        class="cart-item__image"
+                                        alt="{{ block.settings.photo_1.alt | escape }}"
+                                        loading="lazy"
+                                        width="auto"
+                                        height="auto"
+                                    >
+                                </div>
+                                <div class="content">
+                                    <h3>{{ block.settings.subtitle_1 }}</h3>
+                                    <span>{{ block.settings.role_1 }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="item_container">
+                            <div class="review">
+                                <img
+                                    src="{{ block.settings.review_1 | image_url: width: 300 }}"
+                                    class="cart-item__image"
+                                    alt="{{ block.settings.review_1.alt | escape }}"
+                                    loading="lazy"
+                                    width="auto"
+                                    height="auto"
+                                >
+                            </div>
+                            <span class="main-text">{{ block.settings.text_1 }}</span>
+                            <div class="photo-with-text">
+                                <div class="photo">
+                                    <img
+                                        src="{{ block.settings.photo_1 | image_url: width: 300 }}"
+                                        class="cart-item__image"
+                                        alt="{{ block.settings.photo_1.alt | escape }}"
+                                        loading="lazy"
+                                        width="auto"
+                                        height="auto"
+                                    >
+                                </div>
+                                <div class="content">
+                                    <h3>{{ block.settings.subtitle_1 }}</h3>
+                                    <span>{{ block.settings.role_1 }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="item_container">
+                            <div class="review">
+                                <img
+                                    src="{{ block.settings.review_1 | image_url: width: 300 }}"
+                                    class="cart-item__image"
+                                    alt="{{ block.settings.review_1.alt | escape }}"
+                                    loading="lazy"
+                                    width="auto"
+                                    height="auto"
+                                >
+                            </div>
+                            <span class="main-text">{{ block.settings.text_1 }}</span>
+                            <div class="photo-with-text">
+                                <div class="photo">
+                                    <img
+                                        src="{{ block.settings.photo_1 | image_url: width: 300 }}"
+                                        class="cart-item__image"
+                                        alt="{{ block.settings.photo_1.alt | escape }}"
+                                        loading="lazy"
+                                        width="auto"
+                                        height="auto"
+                                    >
+                                </div>
+                                <div class="content">
+                                    <h3>{{ block.settings.subtitle_1 }}</h3>
+                                    <span>{{ block.settings.role_1 }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <div class="slide">
+                        <div class="item_container">
+                            <div class="review">
+                                <img
+                                    src="{{ block.settings.review_1 | image_url: width: 300 }}"
+                                    class="cart-item__image"
+                                    alt="{{ block.settings.review_1.alt | escape }}"
+                                    loading="lazy"
+                                    width="auto"
+                                    height="auto"
+                                >
+                            </div>
+                            <span class="main-text">{{ block.settings.text_1 }}</span>
+                            <div class="photo-with-text">
+                                <div class="photo">
+                                    <img
+                                        src="{{ block.settings.photo_1 | image_url: width: 300 }}"
+                                        class="cart-item__image"
+                                        alt="{{ block.settings.photo_1.alt | escape }}"
+                                        loading="lazy"
+                                        width="auto"
+                                        height="auto"
+                                    >
+                                </div>
+                                <div class="content">
+                                    <h3>{{ block.settings.subtitle_1 }}</h3>
+                                    <span>{{ block.settings.role_1 }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="item_container">
+                            <div class="review">
+                                <img
+                                    src="{{ block.settings.review_1 | image_url: width: 300 }}"
+                                    class="cart-item__image"
+                                    alt="{{ block.settings.review_1.alt | escape }}"
+                                    loading="lazy"
+                                    width="auto"
+                                    height="auto"
+                                >
+                            </div>
+                            <span class="main-text">{{ block.settings.text_1 }}</span>
+                            <div class="photo-with-text">
+                                <div class="photo">
+                                    <img
+                                        src="{{ block.settings.photo_1 | image_url: width: 300 }}"
+                                        class="cart-item__image"
+                                        alt="{{ block.settings.photo_1.alt | escape }}"
+                                        loading="lazy"
+                                        width="auto"
+                                        height="auto"
+                                    >
+                                </div>
+                                <div class="content">
+                                    <h3>{{ block.settings.subtitle_1 }}</h3>
+                                    <span>{{ block.settings.role_1 }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="item_container">
+                            <div class="review">
+                                <img
+                                    src="{{ block.settings.review_1 | image_url: width: 300 }}"
+                                    class="cart-item__image"
+                                    alt="{{ block.settings.review_1.alt | escape }}"
+                                    loading="lazy"
+                                    width="auto"
+                                    height="auto"
+                                >
+                            </div>
+                            <span class="main-text">{{ block.settings.text_1 }}</span>
+                            <div class="photo-with-text">
+                                <div class="photo">
+                                    <img
+                                        src="{{ block.settings.photo_1 | image_url: width: 300 }}"
+                                        class="cart-item__image"
+                                        alt="{{ block.settings.photo_1.alt | escape }}"
+                                        loading="lazy"
+                                        width="auto"
+                                        height="auto"
+                                    >
+                                </div>
+                                <div class="content">
+                                    <h3>{{ block.settings.subtitle_1 }}</h3>
+                                    <span>{{ block.settings.role_1 }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="item_container">
+                            <div class="review">
+                                <img
+                                    src="{{ block.settings.review_1 | image_url: width: 300 }}"
+                                    class="cart-item__image"
+                                    alt="{{ block.settings.review_1.alt | escape }}"
+                                    loading="lazy"
+                                    width="auto"
+                                    height="auto"
+                                >
+                            </div>
+                            <span class="main-text">{{ block.settings.text_1 }}</span>
+                            <div class="photo-with-text">
+                                <div class="photo">
+                                    <img
+                                        src="{{ block.settings.photo_1 | image_url: width: 300 }}"
+                                        class="cart-item__image"
+                                        alt="{{ block.settings.photo_1.alt | escape }}"
+                                        loading="lazy"
+                                        width="auto"
+                                        height="auto"
+                                    >
+                                </div>
+                                <div class="content">
+                                    <h3>{{ block.settings.subtitle_1 }}</h3>
+                                    <span>{{ block.settings.role_1 }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+    <div class="smothly-btn">
+        <a
+            {% if section.settings.btn_link == blank %}
+            role="link" aria-disabled="true"
+            {% else %}
+            href="{{ section.settings.btn_link }}"
+            {% endif %}
+            class="button{% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+        >
+            {{- section.settings.btn_label | escape -}}
+        </a>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "smothly review",
+        "class": "section",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "Take a look what our users said about our platforms"
+            },
+            {
+            "type": "color_scheme",
+            "id": "color_scheme",
+            "label": "t:sections.all.colors.label",
+            "default": "scheme-1"
+            },
+            {
+                "type": "text",
+                "id": "btn_label",
+                "label": "Button Label",
+                "default": "View All Testimonials"
+            },
+            {
+                "type": "url",
+                "id": "btn_link",
+                "label": "Button Link"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "block",
+                "name": "layout",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "review_1",
+                        "label": "Image 1"
+                    },
+                    {
+                        "type": "text",
+                        "id": "during",
+                        "label": "During time / s"
+                    },                    
+                    {
+                        "type": "text",
+                        "id": "text_1",
+                        "label": "text1",
+                        "default": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "photo_1",
+                        "label": "Photo 1"
+                    },
+                    {
+                        "type": "text",
+                        "id": "subtitle_1",
+                        "label": "Subtitle 1",
+                        "default": "Afif Ubaidillah "
+                    },
+                    {
+                        "type": "text",
+                        "id": "role_1",
+                        "label": "Role 1",
+                        "default": "UI/UX Designer"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "review_2",
+                        "label": "Image 2"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_2",
+                        "label": "text2",
+                        "default": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "photo_2",
+                        "label": "Photo 2"
+                    },
+                    {
+                        "type": "text",
+                        "id": "subtitle_2",
+                        "label": "Subtitle 2",
+                        "default": "Afif Ubaidillah "
+                    },
+                    {
+                        "type": "text",
+                        "id": "role_2",
+                        "label": "Role 2",
+                        "default": "UI/UX Designer"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "review_3",
+                        "label": "Image 3"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_3",
+                        "label": "text3",
+                        "default": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "photo_3",
+                        "label": "Photo 3"
+                    },
+                    {
+                        "type": "text",
+                        "id": "subtitle_3",
+                        "label": "Subtitle 3",
+                        "default": "Afif Ubaidillah "
+                    },
+                    {
+                        "type": "text",
+                        "id": "role_3",
+                        "label": "Role 3",
+                        "default": "UI/UX Designer"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "review_4",
+                        "label": "Image 4"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_4",
+                        "label": "text4",
+                        "default": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit."
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "photo_4",
+                        "label": "Photo 4"
+                    },
+                    {
+                        "type": "text",
+                        "id": "subtitle_4",
+                        "label": "Subtitle 4",
+                        "default": "Afif Ubaidillah "
+                    },
+                    {
+                        "type": "text",
+                        "id": "role_4",
+                        "label": "Role 4",
+                        "default": "UI/UX Designer"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "smothly slider",
+                "blocks": [
+                    {
+                        "type": "block"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}
