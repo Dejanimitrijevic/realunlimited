@@ -1,0 +1,120 @@
+.benefit .block_items{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+.benefit .container {
+    position: relative;
+}
+.benefit .container .main {
+    background: radial-gradient(50% 50% at 50% 100%, #17442C 0%, #071E12 100%);
+    padding: 0 90px;
+}
+
+.benefit .block_items {
+    padding: 50px 0;
+}
+.benefit .block {
+    background: radial-gradient(77.62% 107.63% at 22.98% 23.92%, rgba(126, 150, 118, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border: 0.8px solid;
+    border-image-source: radial-gradient(225.54% 387.65% at 49.87% 0%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 14.34%, rgba(255, 255, 255, 0.7) 49.73%);
+    border-radius: 10px;
+}
+.benefit .block .block_wrapper {
+    padding: 35px 20px 35px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    gap: 25px;
+}
+.benefit .block .block_wrapper .block_title {
+    margin: 22px 0 10px;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Instrument';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26.4px;
+    letter-spacing: -0.03em;
+    background-image: radial-gradient(98.26% 556.35% at 1.74% 11.54%, #FFFFFF 0%, #999999 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+.benefit .block .block_wrapper .text span {
+    font-family: Instrument;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF80;
+
+}
+.block .link a {
+    font-family: Instrument;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.52px;
+    text-align: center;
+    color: var(--White, #FFFFFF);
+    text-decoration: none;
+}
+
+.benefit .block_wrapper .link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.benefit .container .main .title {
+    font-family: Instrument;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 55.2px;
+    letter-spacing: -.03em;
+    text-align: left;
+    -webkit-text-fill-color: transparent;
+    background-image: radial-gradient(circle, #ffff, #9999, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    margin: 100px 0 45px;
+}
+.benefit .main .benefit_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.benefit .main .benefit-footer {
+    display: flex;
+    align-items: center;
+    padding: 60px 0 91px;
+    justify-content: space-between;
+    border-top: 1px solid #FFFFFF26;
+}
+.benefit .main .benefit-footer h3 {
+    width: 50%;
+    font-family: Instrument;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    -webkit-text-fill-color: transparent;
+    background-image: radial-gradient(circle, #ffff, #9999, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.benefit .main .benefit-footer a {
+    box-shadow: 0px 0px 40px 0px #48B06566;
+}
+
+.benefit .block .block_wrapper:hover {
+    background: radial-gradient(77.62% 107.63% at 22.98% 23.92%, rgba(126, 150, 118, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border: 0.8px solid;
+    border-image-source: radial-gradient(225.54% 387.65% at 49.87% 0%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 14.34%, rgba(255, 255, 255, 0.7) 49.73%);
+    box-shadow: 0px 25px 30px 0px #00000059;
+}
+
+

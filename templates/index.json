@@ -405,6 +405,87 @@
         "title": "<p>The <strong>security teams<\/strong> at our investment company guarantees that all your data is safe<\/p>",
         "text": "Lorem ipsum dolor sit amet  conset atetur adipiscing elit, sed do eiusmod tempor incididunt."
       }
+    },
+    "benefits_V3NAyc": {
+      "type": "benefits",
+      "blocks": {
+        "block_gV9w3m": {
+          "type": "block",
+          "settings": {
+            "title": "Wealth Accumulation",
+            "icon": "shopify:\/\/shop_images\/1.webp",
+            "text": "Investing allows you to grow your wealth over time, creating opportunities for financial growth and stability.",
+            "link_label": "Learn More",
+            "link_url": "shopify:\/\/collections\/frontpage"
+          }
+        },
+        "block_X8ktJi": {
+          "type": "block",
+          "settings": {
+            "title": "Financial Security",
+            "icon": "shopify:\/\/shop_images\/2.webp",
+            "text": "A well-diversified investment portfolio provides a safety net, offering greater financial security during uncertain times.",
+            "link_label": "Learn More",
+            "link_url": ""
+          }
+        },
+        "block_y7nYj9": {
+          "type": "block",
+          "settings": {
+            "title": "Passive Income",
+            "icon": "shopify:\/\/shop_images\/3.webp",
+            "text": "Investments such as dividends, rental properties, or interest-bearing accounts generate passive income.",
+            "link_label": "Learn More",
+            "link_url": ""
+          }
+        },
+        "block_eXgid4": {
+          "type": "block",
+          "settings": {
+            "title": "Inflation Hedge",
+            "icon": "shopify:\/\/shop_images\/4.webp",
+            "text": "Investments can help protect against inflation, as they often appreciate in value over time.",
+            "link_label": "Learn More",
+            "link_url": ""
+          }
+        },
+        "block_XmkNG3": {
+          "type": "block",
+          "settings": {
+            "title": "Tax Benefits",
+            "icon": "shopify:\/\/shop_images\/5.webp",
+            "text": "Certain investment accounts, like 401(k)s and IRAs, offer tax advantages, such as tax-deferred growth.",
+            "link_label": "Learn More",
+            "link_url": ""
+          }
+        },
+        "block_NdkmNz": {
+          "type": "block",
+          "settings": {
+            "title": "Building a Legacy",
+            "icon": "shopify:\/\/shop_images\/6.webp",
+            "text": "Investments can contribute to building a financial legacy, allowing you to leave assets for future generations.",
+            "link_label": "Learn More",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "block_gV9w3m",
+        "block_X8ktJi",
+        "block_y7nYj9",
+        "block_eXgid4",
+        "block_XmkNG3",
+        "block_NdkmNz"
+      ],
+      "settings": {
+        "background": "shopify:\/\/shop_images\/background.png",
+        "color_scheme": "scheme-2a857076-955e-47ab-822a-ba904224d8cd",
+        "title": "All the benefits you get if you invest with InvestNow",
+        "subtitle": "We are very open and very happy if you give us feedback on us. Need more benefits?",
+        "btn_label": "Request For More",
+        "btn_link": ""
+      }
     }
   },
   "order": [
@@ -412,6 +493,7 @@
     "mutil_brands_gzJz34",
     "multi_platform_qaJjtc",
     "stock_slider_7aKRyg",
-    "about_RQzcRB"
+    "about_RQzcRB",
+    "benefits_V3NAyc"
   ]
 }

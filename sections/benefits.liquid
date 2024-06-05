@@ -1,0 +1,189 @@
+{{ 'custom-benefit.css' | asset_url | stylesheet_tag }}
+<div class="benefit">
+    <div class="container ">
+        {% comment %} <div class="bg">
+            {% if section.settings.background %}
+                <img
+                    srcset="
+                    {% if section.settings.background.width >= 350 %}{{ section.settings.background | image_url: width: 350 }} 350w,{% endif %}
+                    {% if section.settings.background.width >= 750 %}{{ section.settings.background | image_url: width: 750 }} 750w,{% endif %}
+                    {% if section.settings.background.width >= 1100 %}{{ section.settings.background | image_url: width: 1100 }} 1100w,{% endif %}
+                    {% if section.settings.background.width >= 1500 %}{{ section.settings.background | image_url: width: 1500 }} 1500w,{% endif %}
+                    {% if section.settings.background.width >= 2200 %}{{ section.settings.background | image_url: width: 2200 }} 2200w,{% endif %}
+                    {% if section.settings.background.width >= 3000 %}{{ section.settings.background | image_url: width: 3000 }} 3000w,{% endif %}
+                    {{ section.settings.background | image_url }} {{ section.settings.background.width }}w
+                    "
+                    src="{{ block.settings.img | image_url: width: 1100 }}"
+                    loading="lazy"
+                    fetchpriority="high"
+                    width="auto"
+                    height="auto"
+                    alt="{{ section.settings.background.alt | escape }}"
+                >
+            {% endif %}
+        </div> {% endcomment %}
+        <div class="main color-{{ section.settings.color_scheme }}">
+            {% if section.settings.title %}
+                <div class="benefit_title">
+                    <h1 class="title">{{ section.settings.title }}</h1>
+                </div>
+            {% endif %}
+            <div class="block_items">
+                {% for block in section.blocks %}
+                    {% if block.type == "block" %}
+                        <div class="block">
+                            <div class="block_wrapper">
+                                <div class="block_top">
+                                    {% if block.settings.icon %}
+                                        <div>
+                                            <img
+                                                srcset="
+                                                {% if block.settings.icon.width >= 350 %}{{ block.settings.icon | image_url: width: 350 }} 350w,{% endif %}
+                                                {% if block.settings.icon.width >= 750 %}{{ block.settings.icon | image_url: width: 750 }} 750w,{% endif %}
+                                                {% if block.settings.icon.width >= 1100 %}{{ block.settings.icon | image_url: width: 1100 }} 1100w,{% endif %}
+                                                {% if block.settings.icon.width >= 1500 %}{{ block.settings.icon | image_url: width: 1500 }} 1500w,{% endif %}
+                                                {% if block.settings.icon.width >= 2200 %}{{ block.settings.icon | image_url: width: 2200 }} 2200w,{% endif %}
+                                                {% if block.settings.icon.width >= 3000 %}{{ block.settings.icon | image_url: width: 3000 }} 3000w,{% endif %}
+                                                {{ block.settings.icon | image_url }} {{ block.settings.icon.width }}w
+                                                "
+                                                src="{{ block.settings.icon | image_url: width: 1100 }}"
+                                                loading="lazy"
+                                                fetchpriority="high"
+                                                width="77"
+                                                height="77"
+                                                alt="{{ block.settings.icon.alt | escape }}"
+                                            >
+                                        </div>
+                                    {% endif %}
+                                    {% if block.settings.title %}
+                                        <h3 class="block_title">{{ block.settings.title }}</h3>
+                                    {% endif %}
+                                    {% if block.settings.text %}
+                                        <div class="text">
+                                            <span>{{ block.settings.text }}</span>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                                {% if block.settings.link_label %}
+                                    <div class="link">
+                                        <a href="{{ block.settings.link_url }}">{{ block.settings.link_label }}</a>
+                                        {% render 'link-icon' %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+    
+                <div class="benefit-footer ">
+                    {% if section.settings.subtitle %}
+                        <h3>{{ section.settings.subtitle }}</h3>
+                    {% endif %}
+                    {% if section.settings.btn_label %}
+                        <a
+                          {% if section.settings.btn_label == blank %}
+                            role="link" aria-disabled="true"
+                          {% else %}
+                            href="{{ section.settings.btn_link}}"
+                          {% endif %}
+                          class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                        >
+                          {{- section.settings.btn_label | escape -}}
+                        </a>
+                    {% endif %}                
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% schema %}
+    {
+        "name": "benefits",
+        "class": "section",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "background",
+                "label": "Background"
+            },
+            {
+                "type": "color_scheme",
+                "id": "color_scheme",
+                "label": "t:sections.all.colors.label",
+                "default": "scheme-1"
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "All the benefits you get if you invest with InvestNow"
+            },
+            {
+                "type": "text",
+                "id": "subtitle",
+                "label": "Subtitle",
+                "default": "We are very open and very happy if you give us feedback on us. Need more benefits?"
+            },
+            {
+                "type": "text",
+                "id": "btn_label",
+                "label": "Button Label",
+                "default": "Request For More"
+            },
+            {
+                "type": "url",
+                "id": "btn_link",
+                "label": "Button Link"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "block",
+                "name": "item",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title",
+                        "default": "Wealth Accumulation"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "icon",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "text",
+                        "default": "Investing allows you to grow your wealth over time, creating opportunities for financial growth and stability."
+                    },
+                    {
+                        "type": "text",
+                        "id": "link_label",
+                        "label": "Link label",
+                        "default": "Learn More"
+                    },
+                    {
+                        "type": "url",
+                        "id": "link_url",
+                        "label": "URL"
+                    }
+                    
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "benefit",
+                "blocks": [
+                    {
+                        "type": "block"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}
