@@ -1,0 +1,47 @@
+.cta-mobile {
+    display: flex;
+    align-items: center;
+    margin: 0 17px;
+    border-radius: 20px;
+    position: relative;
+}
+.cta-mobile .cta-left {
+    width: 50%;
+}
+.cta-mobile .cta-left .container {
+    padding: 97px 0 146px 118px;
+}
+.cta-mobile .cta-left .container h1 {
+    width: 100%;
+    background-image: radial-gradient(circle, #ffffff, #999999);
+    margin: 0;
+    margin-bottom: 10px;
+}
+.cta-mobile .cta-left .container span {
+    font-family: 'Instrument';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--Text-White, #FFFFFFB2);
+    text-align: left;
+}
+.cta-mobile .cta-left .container .btns {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-top: 30px;
+}
+.cta-mobile .cta-right {
+    width: 50%; 
+    position: absolute;
+    height: 100%;
+    width: 75%;
+    right: 0;
+}
+.cta-mobile .cta-right img {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}

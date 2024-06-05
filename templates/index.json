@@ -486,6 +486,95 @@
         "btn_label": "Request For More",
         "btn_link": ""
       }
+    },
+    "smothly_review_TXcthj": {
+      "type": "smothly-review",
+      "blocks": {
+        "block_WiRhYj": {
+          "type": "block",
+          "settings": {
+            "review_1": "shopify:\/\/shop_images\/Frame_14_1.png",
+            "during": "20",
+            "text_1": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "photo_1": "shopify:\/\/shop_images\/image_4.png",
+            "subtitle_1": "Afif Ubaidillah",
+            "role_1": "UI\/UX Designer",
+            "text_2": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "subtitle_2": "Afif Ubaidillah",
+            "role_2": "UI\/UX Designer",
+            "text_3": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "subtitle_3": "Afif Ubaidillah",
+            "role_3": "UI\/UX Designer",
+            "text_4": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "subtitle_4": "Afif Ubaidillah",
+            "role_4": "UI\/UX Designer"
+          }
+        },
+        "block_MY6xQ4": {
+          "type": "block",
+          "settings": {
+            "review_1": "shopify:\/\/shop_images\/Frame_14_1.png",
+            "during": "30",
+            "text_1": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "photo_1": "shopify:\/\/shop_images\/image_5.png",
+            "subtitle_1": "Afif Ubaidillah",
+            "role_1": "UI\/UX Designer",
+            "text_2": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "subtitle_2": "Afif Ubaidillah",
+            "role_2": "UI\/UX Designer",
+            "text_3": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "subtitle_3": "Afif Ubaidillah",
+            "role_3": "UI\/UX Designer",
+            "text_4": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "subtitle_4": "Afif Ubaidillah",
+            "role_4": "UI\/UX Designer"
+          }
+        },
+        "block_pzPWHP": {
+          "type": "block",
+          "settings": {
+            "review_1": "shopify:\/\/shop_images\/Frame_14_1.png",
+            "during": "40",
+            "text_1": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "photo_1": "shopify:\/\/shop_images\/image_6.png",
+            "subtitle_1": "Afif Ubaidillah",
+            "role_1": "UI\/UX Designer",
+            "text_2": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "subtitle_2": "Afif Ubaidillah",
+            "role_2": "UI\/UX Designer",
+            "text_3": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "subtitle_3": "Afif Ubaidillah",
+            "role_3": "UI\/UX Designer",
+            "text_4": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "subtitle_4": "Afif Ubaidillah",
+            "role_4": "UI\/UX Designer"
+          }
+        }
+      },
+      "block_order": [
+        "block_WiRhYj",
+        "block_MY6xQ4",
+        "block_pzPWHP"
+      ],
+      "settings": {
+        "title": "Take a look what our users said about our platforms",
+        "color_scheme": "scheme-2a857076-955e-47ab-822a-ba904224d8cd",
+        "btn_label": "View All Testimonials",
+        "btn_link": ""
+      }
+    },
+    "cta_mobile_V3Qbxr": {
+      "type": "cta-mobile",
+      "settings": {
+        "header": "Let’s start investment today with Download our App",
+        "color_scheme": "scheme-0158777c-b537-46ba-bbf5-f942d0372ca0",
+        "text": "Lorem ipsum dolor sit amet  conset atetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        "google_btn_img": "shopify:\/\/shop_images\/image_8.png",
+        "google_btn_link": "",
+        "app_btn_img": "shopify:\/\/shop_images\/image_7_1.png",
+        "app_btn_link": "",
+        "bg": "shopify:\/\/shop_images\/Group_39790.png"
+      }
     }
   },
   "order": [
@@ -494,6 +583,8 @@
     "multi_platform_qaJjtc",
     "stock_slider_7aKRyg",
     "about_RQzcRB",
-    "benefits_V3NAyc"
+    "benefits_V3NAyc",
+    "smothly_review_TXcthj",
+    "cta_mobile_V3Qbxr"
   ]
 }

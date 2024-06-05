@@ -1,4 +1,8 @@
 
+.smooth-review {
+    position: relative;
+    padding: 120px 0;
+}
 .smooth-review .slider {
     margin-bottom: 30px;
 }
@@ -13,7 +17,7 @@
     padding: 35px;
     display: flex;
     flex-direction: column;
-    gap: 25px; 
+    gap: 25px;
 }
 .smooth-review .slide .item_container .review {
     height: 19px;
@@ -76,4 +80,21 @@
     background-image: radial-gradient(circle, #071E12, #6E7A6D);
     -webkit-background-clip: text;
     background-clip: text;
+}
+.smothly-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 80px;
+    z-index: 3;
+    width: 100%;
+}
+.smooth-review::after {
+    background-image: linear-gradient(#fff0, #ffffffa8 86%, #ffffffe0 64%, #FFF);
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
 }
