@@ -1,9 +1,9 @@
 .multi-brand {
     padding-top: 80px;
     padding-bottom: 20px;
-    border-width: 0px, 0px, 0px, 0px;
     border-style: solid;
     border-color: #071E1226;
+    border: 0;
 }
 .multi-brand .container .brands {
     display: flex;
@@ -13,6 +13,7 @@
     padding: 28px 12px;
     opacity: 0.5;
     background: linear-gradient(270deg, rgba(255, 255, 255, 0) -55.04%, #FFFFFF 100%);
+    border: 0;
 }
 .multi-brand .container .brands .brand {
     display: flex;
@@ -34,5 +35,18 @@
 .title p strong {
     color: var(--Primary, #071E12);
 }
-
+@media (max-width: 1024px) {
+    .multi-brand {
+        padding-top: 65px;
+    }
+}
+@media (max-width: 768px) {
+    .multi-brand {
+        padding-top: 40px;
+    }
+    .multi-brand .container .brands v{
+        gap: 10px;
+        padding: 0;
+    }
+}
 

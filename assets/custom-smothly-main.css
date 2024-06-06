@@ -98,3 +98,23 @@
     position: absolute;
     top: 0;
 }
+@media (max-width: 1024px) {
+    .smooth-review {
+        padding: 80px 0;
+    }
+    .smooth-review .title h1 {
+        font-size: 40px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .smooth-review {
+        padding: 40px 0;
+    }
+    .smooth-review .title h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+}

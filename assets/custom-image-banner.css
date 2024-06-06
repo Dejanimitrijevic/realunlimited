@@ -107,3 +107,39 @@
 .banner {
     margin: 15px;
 }
+
+@media (max-width: 1024px) {
+    .banner__box .banner__heading {
+        font-size: 60px;
+        line-height: 63px;
+        letter-spacing: 0;
+    }
+    .banner__text p {
+        font-size: 18px;
+    }
+    .banner-padding {
+        padding-top: 70px;
+    }
+}
+@media (max-width: 768px) {
+    .banner__content {
+        padding: 100px 0 0;
+    }
+    .banner__box .banner__heading {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .banner__text p {
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 0;
+    }
+    .btn-with-review .banner__buttons a {
+        font-size: 15px;
+        font-weight: 300;
+        padding: 0;
+    }
+    .banner-padding {
+        padding-top: 50px;;
+    }
+}

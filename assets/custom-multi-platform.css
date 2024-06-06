@@ -120,3 +120,44 @@
     padding-top: 120px;
 }
 
+@media (max-width: 1024px) {
+    .multi-btn div{
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+    .container h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .main_item--atr .left_bar {
+        width: 45%;
+    }
+    .platform .container {
+        padding-bottom: 80px;
+        padding-top: 120px;
+    }
+}
+@media (max-width: 768px) {
+    .platform .container {
+        padding-bottom: 50px;
+        padding-top: 60px;
+    }
+    .container h1 {
+        font-size: 30px;
+        line-height: 30px;
+        width: 100%;
+    }
+    .multi-btn div {
+        font-size: 9px;
+        font-weight: 200;
+        letter-spacing: 0;
+    } 
+    .main_item--atr {
+        flex-direction: column-reverse;
+    }
+    .main_item--atr .left_bar,
+    .main_item--atr .right_bar {
+        width: 100%;
+    }
+}

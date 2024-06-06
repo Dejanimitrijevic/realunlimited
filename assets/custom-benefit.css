@@ -127,3 +127,29 @@
     -o-border-radius: 25px;
 }
 
+@media (max-width: 1024px) {
+    .benefit .container .main {
+        padding: 0 40px;
+    }
+    .benefit .container .main .title {
+        font-size: 40px;    
+        line-height: 40px;
+        margin: 50px 0 45px;
+        font-weight: 400;
+    }
+    .benefit .main .benefit-footer {
+        padding: 40px 0 65px;
+    }
+}
+@media (max-width: 768px) {
+    .benefit .block_items {
+        grid-template-columns: auto auto;
+    }
+    .benefit .main .benefit-footer {
+        padding: 20px 0 30px;
+    }
+    .benefit .main .benefit-footer h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

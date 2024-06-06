@@ -45,3 +45,13 @@
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+@media (max-width: 1024px) {
+    .cta-mobile .cta-left .container {
+        padding: 70px 0 120px 100px;
+    }
+}
+@media (max-width: 768px) {
+    .cta-mobile .cta-left {
+        z-index: 3;
+    }
+}

@@ -63,3 +63,9 @@
     width: 30%;
     justify-content: flex-end;
 }
+@media (max-width: 1440px) {
+    .header.header--middle-left nav a {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}

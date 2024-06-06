@@ -3522,3 +3522,8 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+@media (max-width: 1024px) {
+  .page-width {
+    padding: 0 5rem;
+  }
+}

@@ -27,7 +27,13 @@
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
 <style>
-  
+  .downbutton {
+    font-family: 'Instrument';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-align: left;
+  }
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
@@ -77,6 +83,19 @@
     padding-bottom: 1rem;
     padding-top: 1rem;
     line-height: calc(1 + 0.8 / var(--font-body-scale));
+  }
+  @media (max-width: 1024px) {
+    .downbutton {
+      font-size: 13px;
+      padding: 0 20px;
+    }
+  }
+  @media (max-width: 768px) {
+    .downbutton {
+      font-size: 12px;
+      padding: 0 10px;
+      font-weight: 300;
+    }
   }
 
   @media screen and (min-width: 750px) {
@@ -316,7 +335,7 @@
         {% else %}
           href="https://www.relume.io/"
         {% endif %}
-        class="button{% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+        class="downbutton button{% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
       >
         {{- section.settings.downbtn_label | escape -}}
       </a>
