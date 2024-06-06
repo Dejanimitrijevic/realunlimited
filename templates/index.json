@@ -575,6 +575,120 @@
         "app_btn_link": "",
         "bg": "shopify:\/\/shop_images\/Group_39790.png"
       }
+    },
+    "faq_ieNRTT": {
+      "type": "faq",
+      "blocks": {
+        "block_cdQycU": {
+          "type": "block",
+          "settings": {
+            "title": "What is InvestNow?",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
+            "border_set": true,
+            "border_underline_set": false
+          }
+        },
+        "block_iw9a99": {
+          "type": "block",
+          "settings": {
+            "title": "How do I start investing?",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
+            "border_set": true,
+            "border_underline_set": false
+          }
+        },
+        "block_qYrXHH": {
+          "type": "block",
+          "settings": {
+            "title": "What are the risks associated with investing?",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
+            "border_set": false,
+            "border_underline_set": true
+          }
+        },
+        "block_ezaePF": {
+          "type": "block",
+          "settings": {
+            "title": "What is the impact of inflation on investments?",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
+            "border_set": false,
+            "border_underline_set": true
+          }
+        },
+        "block_R3J7TB": {
+          "type": "block",
+          "settings": {
+            "title": "How much money do I need to start investing?",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
+            "border_set": false,
+            "border_underline_set": true
+          }
+        },
+        "block_z9chBp": {
+          "type": "block",
+          "settings": {
+            "title": "What are the different types of investments?",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
+            "border_set": false,
+            "border_underline_set": true
+          }
+        },
+        "block_z78XKD": {
+          "type": "block",
+          "settings": {
+            "title": "How does investing differ from saving?",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
+            "border_set": false,
+            "border_underline_set": true
+          }
+        },
+        "block_aDtPcK": {
+          "type": "block",
+          "settings": {
+            "title": "What is InvestNow?",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
+            "border_set": false,
+            "border_underline_set": true
+          }
+        },
+        "block_83JNPE": {
+          "type": "block",
+          "settings": {
+            "title": "What is InvestNow?",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
+            "border_set": false,
+            "border_underline_set": true
+          }
+        },
+        "block_XdtqzH": {
+          "type": "block",
+          "settings": {
+            "title": "What is InvestNow?",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
+            "border_set": false,
+            "border_underline_set": true
+          }
+        }
+      },
+      "block_order": [
+        "block_cdQycU",
+        "block_iw9a99",
+        "block_qYrXHH",
+        "block_ezaePF",
+        "block_R3J7TB",
+        "block_z9chBp",
+        "block_z78XKD",
+        "block_aDtPcK",
+        "block_83JNPE",
+        "block_XdtqzH"
+      ],
+      "settings": {
+        "title": "Everything you need to know",
+        "text": "<p>If you have anything else you want to ask, <a href=\"\/collections\" target=\"_blank\" title=\"All collections\">reach out to us.<\/a><\/p>",
+        "color_scheme": "scheme-2a857076-955e-47ab-822a-ba904224d8cd",
+        "btn_label": "Ask Help For More",
+        "btn_link": ""
+      }
     }
   },
   "order": [
@@ -585,6 +699,7 @@
     "about_RQzcRB",
     "benefits_V3NAyc",
     "smothly_review_TXcthj",
-    "cta_mobile_V3Qbxr"
+    "cta_mobile_V3Qbxr",
+    "faq_ieNRTT"
   ]
 }

@@ -4,15 +4,62 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "link_list_igFWWn": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Company",
+            "menu": "company"
+          }
+        },
+        "link_list_kyBAbK": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Integrations",
+            "menu": "integrations"
+          }
+        },
+        "link_list_WiwA8H": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Resources",
+            "menu": "resources"
+          }
+        },
+        "link_list_dfU4hw": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Help Center",
+            "menu": "help-center"
+          }
+        },
+        "textwithimg_YaznH6": {
+          "type": "Textwithimg",
+          "settings": {
+            "header": "Download our App",
+            "image_1": "shopify:\/\/shop_images\/image_8.png",
+            "image_2": "shopify:\/\/shop_images\/image_7_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "link_list_igFWWn",
+        "link_list_kyBAbK",
+        "link_list_WiwA8H",
+        "link_list_dfU4hw",
+        "textwithimg_YaznH6"
+      ],
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-0158777c-b537-46ba-bbf5-f942d0372ca0",
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
+        "logo": "shopify:\/\/shop_images\/Frame_16.png",
+        "logo_text": "Maximize your business and investment profits with expert guidance and innovative solutions.",
+        "newsletter_heading": "Subscribe Our Newsletter",
         "enable_follow_on_shop": true,
         "show_social": true,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "payment_enable": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
         "show_policy": false,
         "margin_top": 0,
         "padding_top": 36,

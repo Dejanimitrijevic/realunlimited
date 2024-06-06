@@ -1,0 +1,77 @@
+.faq_everything {
+    padding: 120px 0;
+}
+
+.faq_everything .container .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.faq_everything .container .head .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.faq_everything .container .head .content h1 {
+    width: 100%;
+    margin: 0;
+}
+.faq_everything .container .head .content p {
+    margin: 0;
+    font-family: 'Instrument';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.faq_everything .container .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 55px;
+    padding-top: 55px;
+}
+.faq_everything .container .main .item .accordion {
+    font-family: 'Instrument';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.4px;
+    text-align: left;
+    color: var(--Primary, #071E12);
+}
+.faq_everything .container .main .item .accordion .title-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.faq_everything .container .main .item .panel p {
+    font-family: 'Instrument';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: var(--Text-Color, #071E1280);
+}
+.item_underline {
+    border-bottom: 1px solid #071E1226;
+}
+.main .border {
+    border: 10px solid #EDF7F0;
+    border-radius: 15px;
+}
+.head .content a {
+    color: var(--Primary, #071E12);
+    font-family: 'Instrument';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+}
+
+.faq_active svg {
+    transform: rotate(45deg);
+    transition-duration: 0.5s;
+}
+.faq_active path {
+    fill: #C8C8C8;
+}

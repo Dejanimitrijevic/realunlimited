@@ -1,0 +1,164 @@
+.footer__blocks-wrapper .footer-block .footer-block__heading,
+.footer_text-with-image--header,
+.footer-social {
+    font-family: Instrument;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26.4px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    -webkit-text-fill-color: transparent;
+    background-image: radial-gradient(circle, #ffff, #999);
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.footer__blocks-wrapper .footer-block ul .link--text {
+    font-family: Instrument;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: var(--Text-White, #FFFFFFB2);
+    padding: 0;
+    margin-bottom: 18px;
+    text-decoration: none;
+}
+
+.multi_img {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.footer_blocks-wrapper-display--flex {
+    padding-top: 50px;
+    padding-bottom: 65px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #FFFFFF40;
+    border-bottom: 1px solid #ffffff40;
+}
+.logo_text {
+    font-family: Instrument;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: var(--Text-White, #FFFFFFB2);
+}
+.footer-block__heading.inline-richtext {
+    font-family: Instrument;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26.4px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    -webkit-text-fill-color: transparent;
+    background-image: radial-gradient(circle, #ffff, #999);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.footer-block--newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-block--newsletter .logo {
+    width: 38%;
+}
+.footer-block--newsletter .footer__newsletter {
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.footer-block--newsletter .footer__newsletter .newsletter-form__field-wrapper {
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.footer-block--newsletter .footer__newsletter .newsletter-form__field-wrapper .field__input {
+    border-radius: 100px;
+    width: 456px;
+    height: 57px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    box-shadow: 0px 25px 30px 0px #00000059;
+    background: radial-gradient(131.62% 212.05% at 22.98% 23.92%, rgba(126, 150, 118, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+.footer-block--newsletter .footer__newsletter .newsletter-form__field-wrapper label {
+    font-family: Instrument;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.08px;
+    text-align: left;
+    color: var(--White, #FFFFFF);
+    padding-top: 10px;
+}
+.footer-block--newsletter .footer__newsletter .newsletter-form__field-wrapper button {
+    width: 116px;
+    border: 1px solid #48B065;
+    border-radius: 50px;
+    height: 41px;
+    background: #48B065;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.footer-block--newsletter .footer__newsletter .newsletter-form__field-wrapper button h2 {
+    margin: 0;
+    font-family: Instrument;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.08px;
+    text-align: center;
+    color: var(--Text-White, #FFFFFFB2); 
+}
+.footer-block--newsletter {
+    margin-bottom: 35px;
+}
+
+.list-social__link {
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 59%;   
+    background-color: rgba(255, 255, 255, .14);
+}
+.list-social__link:hover {
+    background-color: #48b065 !important;
+}
+.header-with-social {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.footer-block__newsletter {
+    display: flex;
+    justify-content: flex-end;
+}
+.footer {
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    margin: 15px;
+}
+.footer-flex-right {
+    justify-content: flex-start;
+}
+.footer-flex-right small {
+    color: white;
+    font-family: Instrument;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+}

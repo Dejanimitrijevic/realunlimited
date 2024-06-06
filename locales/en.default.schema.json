@@ -284,6 +284,18 @@
         "social_vimeo_link": {
           "label": "Vimeo",
           "info": "https:\/\/vimeo.com\/shopify"
+        },
+        "social_linkedin_link": {
+          "label": "linkedin",
+          "info": "https:\/\/linkedin.com\/shopify"
+        },
+        "social_whatsApp_link": {
+          "label": "whatsApp",
+          "info": "https:\/\/whatsApp.com\/shopify"
+        },
+        "social_telegram_link": {
+          "label": "telegram",
+          "info": "https:\/\/telegram.com\/shopify"
         }
       }
     },

@@ -1,0 +1,65 @@
+.header {
+    position: absolute;
+    width: 100%;
+    top: 15px;
+}
+.header.header--middle-left {
+    display: flex;
+    justify-content: space-between;
+}
+.header.header--middle-left nav {
+    background: #FFFFFF26;
+    border: 0.7px solid;
+    border-image-source: radial-gradient(209.86% 360.71% at 49.9% -1.19%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 14.34%, rgba(255, 255, 255, 0.7) 49.73%);
+    border-radius: 100px;
+    width: 494px;
+}
+.header.header--middle-left nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.header.header--middle-left nav ul span {
+    font-family: Instrument;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15.6px;
+    text-align: left;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header.header--middle-left nav a {
+    padding: 4px 15px 6px;
+}
+.header.header--middle-left nav a:hover {
+    background: var(--Green, #48B065);
+    border-radius: 100px;    
+}
+.header.header--middle-left nav summary:hover {
+    background: var(--Green, #48B065);
+    border-radius: 100px;  
+}
+.header--sign-app {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.header--sign-app .header__icon {
+    font-family: Instrument;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-align: left;
+    color: white;
+    width: 55px;
+    text-decoration: none;
+}
+.header__heading {
+    width: 30%;
+}
+.header__icons {
+    width: 30%;
+    justify-content: flex-end;
+}

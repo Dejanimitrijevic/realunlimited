@@ -1,0 +1,167 @@
+{{ 'custom-faq.css' | asset_url | stylesheet_tag }}
+
+
+<style>
+.accordion {
+  cursor: pointer;
+  padding: 26px 32px 29px 26px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+
+
+<div class="faq_everything">
+    <div class="container page-width">
+        <div class="head color-{{ section.settings.color_scheme }}">
+            <div class="content">
+                {% if section.settings.title %}
+                    <h1>{{ section.settings.title }}</h1>
+                {% endif %}
+                {% if section.settings.text %}
+                    {{ section.settings.text }}
+                {% endif %}
+            </div>
+            {% if section.settings.btn_label %}
+                <div class="ask_btn">
+                    <a
+                    {% if section.settings.btn_link == blank %}
+                        role="link" aria-disabled="true"
+                    {% else %}
+                        href="{{ section.settings.btn_link }}"
+                    {% endif %}
+                    class="button{% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                    >
+                    {{- section.settings.btn_label | escape -}}
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="main">
+            {% for block in section.blocks %}
+                {% if block.type == "block" %}
+                <div class="item {% if block.settings.border_underline_set %} item_underline{% endif %} {% if block.settings.border_set %} border {% endif %}">
+                        <div class="accordion">
+                            <div class="title-icon">
+                                <span>
+                                    {{ block.settings.title }}
+                                </span>
+                                {% render 'plus-icon' %}
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <p>{{ block.settings.text }}</p>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("faq_active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+{% schema %}
+    {
+        "name": "faq",
+        "class": "section",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "Everything you need to know"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "Text"
+            },
+            {
+                "type": "color_scheme",
+                "id": "color_scheme",
+                "label": "t:sections.all.colors.label",
+                "default": "scheme-1"
+            },
+            {
+                "type": "text",
+                "id": "btn_label",
+                "label": "Button Label",
+                "default": "Ask Help For More"
+            },
+            {
+                "type": "url",
+                "id": "btn_link",
+                "label": "Button link"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "block",
+                "name": "item",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "title",
+                        "default": "What is InvestNow?"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "text",
+                        "default": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus."
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "border_set",
+                        "label": "Border setting",
+                        "default": false
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "border_underline_set",
+                        "label": "Border underline setting",
+                        "default": true
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "faq",
+                "blocks": [
+                    {
+                        "type": "block"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}
